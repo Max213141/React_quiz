@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="396f46a9-a040-476a-9a90-535f18228645" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FinishedQuiz/FinishedQuiz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/FinishedQuiz/FinishedQuiz.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/MenuToggle/MenuToggle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/MenuToggle/MenuToggle.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Drawer/Drawer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/Drawer/Drawer.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Backdrop/Backdrop.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActiveQuiz/ActiveQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/ActiveQuiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswerItem/AnswerItem.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswerItem/AnswerItem.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswerItem/AnswerItem.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswerItem/AnswerItem.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswersList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ActiveQuiz/AnswersList/AnswersList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hoc/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/hoc/Layout/Layout.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -81,7 +74,9 @@
       <option name="presentableId" value="Default" />
       <updated>1604061387418</updated>
       <workItem from="1604061388446" duration="9687000" />
-      <workItem from="1604147774799" duration="20690000" />
+      <workItem from="1604147774799" duration="21082000" />
+      <workItem from="1604256555284" duration="2485000" />
+      <workItem from="1604300382288" duration="4389000" />
     </task>
     <servers />
   </component>
@@ -89,10 +84,10 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="107" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604156332037">
+    <state x="107" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604174719419">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="107" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604156332037" />
+    <state x="107" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604174719419" />
     <state x="223" y="119" width="585" height="801" key="find.popup" timestamp="1604156343192">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
