@@ -37,6 +37,6 @@
     transition: opacity .3s;
 }
 
-.Drawer ul li a:hover .ative{
+.Drawer ul li a:hover, .active{
     opacity: 70%;
 }
