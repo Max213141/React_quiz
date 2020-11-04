@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="396f46a9-a040-476a-9a90-535f18228645" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/QuizCreator/QuizCreator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/QuizList/QuizList.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/containers/QuizList/QuizList.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI/Input/Input.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/FinishedQuiz/FinishedQuiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FinishedQuiz/FinishedQuiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Drawer/Drawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Drawer/Drawer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navigation/Drawer/Drawer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/Drawer/Drawer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI/Button/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI/Button/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,6 +28,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1jb8NAuZbExk4dYDFjfvzCj3m9g" />
@@ -51,7 +53,8 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../Пример/src/components/Navigation/Drawer/Drawer.js" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../Пример/src/containers/Auth/Auth.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -91,7 +94,8 @@
       <workItem from="1604405401733" duration="1512000" />
       <workItem from="1604406924648" duration="6808000" />
       <workItem from="1604416708988" duration="133000" />
-      <workItem from="1604416851764" duration="6081000" />
+      <workItem from="1604416851764" duration="6353000" />
+      <workItem from="1604476429139" duration="18770000" />
     </task>
     <servers />
   </component>
@@ -99,29 +103,29 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="100" width="1006" height="843" key="DiffContextDialog" timestamp="1604430827082">
+    <state x="100" y="100" width="1006" height="841" key="DiffContextDialog" timestamp="1604515709263">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="100" y="100" width="1006" height="843" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604430827082" />
-    <state x="296" y="278" key="FileChooserDialogImpl" timestamp="1604430871637">
+    <state x="100" y="100" width="1006" height="841" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604515709263" />
+    <state x="296" y="278" key="FileChooserDialogImpl" timestamp="1604515841054">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="296" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604430871637" />
+    <state x="296" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604515841054" />
     <state x="17" y="165" key="SettingsEditor" timestamp="1604407293141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="17" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604407293141" />
-    <state x="107" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604315973010">
+    <state x="107" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604431804128">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="107" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604315973010" />
+    <state x="107" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604431804128" />
     <state x="223" y="119" width="585" height="801" key="find.popup" timestamp="1604407197537">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="223" y="119" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604407197537" />
-    <state x="178" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604156340334">
+    <state x="178" y="229" width="672" height="678" key="search.everywhere.popup" timestamp="1604491684593">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="178" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604156340334" />
+    <state x="178" y="229" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1604491684593" />
   </component>
 </project>
