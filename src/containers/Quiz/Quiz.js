@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import classes from './Quiz.module.css'
 import ActiveQuiz from '../../components/ActiveQuiz/ActiveQuiz'
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
+import axios from "../../axios/axios-quiz";
+import Loader from "../../components/Loader/Loader";
 
 class Quiz extends Component {
     state = {
@@ -9,31 +11,8 @@ class Quiz extends Component {
         isFinished:false,
         activeQuestion:0,
         answerState: null,
-        quiz: [
-            {
-                rightAnswerId: 1,
-                question: 'What is color of sky',
-                id:1,
-                answers:[
-                    {text:'blue', id:1},
-                    {text:'white', id:2},
-                    {text:'black', id:3},
-                    {text:'grey', id:4}
-                ]
-            },
-
-            {
-                rightAnswerId: 4,
-                question: 'How old are you?',
-                id:2,
-                answers:[
-                    {text:'<15', id:1},
-                    {text:'<20', id:2},
-                    {text:'<25', id:3},
-                    {text:'<35', id:4}
-                ]
-            },
-        ],
+        quiz: [],
+        loading: true
     }
 
     onAnswerClickHandler = answerId => {
@@ -93,7 +72,18 @@ class Quiz extends Component {
         })
     }
 
-    componentDidMount(){
+    async componentDidMount(){
+        try{
+            const response = await axios.get(`/quizes/${this.props.match.params.id}.json`)
+            const quiz = response.data
+
+            this.setState({
+                quiz,
+                loading:false
+            })
+        } catch(e){
+            console.log(e)
+        }
        console.log('quiz ID = ', this.props.match.params.id)
     }
 
@@ -104,20 +94,22 @@ class Quiz extends Component {
                     <h1>Answer on all questions</h1>
 
                     {
-                       this.state.isFinished
-                           ? <FinishedQuiz
+                        this.state.loading
+                        ? <Loader/>
+                        : this.state.isFinished
+                            ? <FinishedQuiz
                                 results = {this.state.results}
                                 quiz = {this.state.quiz}
                                 onRetry = {this.retryHandler}
-                             />
-                           : <ActiveQuiz
-                               answers={this.state.quiz[this.state.activeQuestion].answers}
-                               question={this.state.quiz[this.state.activeQuestion].question}
-                               onAnswerClick = {this.onAnswerClickHandler}
-                               quizLength={this.state.quiz.length}
-                               answerNumber={this.state.activeQuestion + 1}
-                               state ={this.state.answerState}
-                           />
+                            />
+                            : <ActiveQuiz
+                                answers={this.state.quiz[this.state.activeQuestion].answers}
+                                question={this.state.quiz[this.state.activeQuestion].question}
+                                onAnswerClick = {this.onAnswerClickHandler}
+                                quizLength={this.state.quiz.length}
+                                answerNumber={this.state.activeQuestion + 1}
+                                state ={this.state.answerState}
+                            />
                     }
                 </div>
             </div>
