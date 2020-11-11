@@ -4,16 +4,10 @@ import ActiveQuiz from '../../components/ActiveQuiz/ActiveQuiz'
 import FinishedQuiz from "../../components/FinishedQuiz/FinishedQuiz";
 import axios from "../../axios/axios-quiz";
 import Loader from "../../components/Loader/Loader";
+import {connect} from "react-redux";
+import {fetchQuizes} from "../../store/actions/quiz";
 
 class Quiz extends Component {
-    state = {
-        results: {},
-        isFinished:false,
-        activeQuestion:0,
-        answerState: null,
-        quiz: [],
-        loading: true
-    }
 
     onAnswerClickHandler = answerId => {
         if(this.state.answerState) {
@@ -116,4 +110,21 @@ class Quiz extends Component {
         )
     }
 }
-export default Quiz
+
+function mapStateToProps(state){
+    return {
+        results: state.quiz.results,
+        isFinished: state.quiz.isFinished,
+        activeQuestion: state.quiz.activeQuestion,
+        answerState:  state.quiz.answerState,
+        quiz:  state.quiz.quiz,
+        loading: state.quiz.loading
+    }
+}
+
+function mapDispatchToProps(dispatch){
+    return {
+
+    }
+}
+export default connect (mapStateToProps,mapDispatchToProps)(Quiz)

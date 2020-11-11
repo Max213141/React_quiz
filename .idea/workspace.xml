@@ -5,11 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="396f46a9-a040-476a-9a90-535f18228645" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/actionTypes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/actions/quiz.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Quiz/Quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/containers/QuizList/QuizList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/QuizList/QuizList.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,7 +50,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Пример/src/containers/Auth/Auth.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Redux" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -101,6 +106,7 @@
       <workItem from="1604652319517" duration="461000" />
       <workItem from="1604652837680" duration="15459000" />
       <workItem from="1604750697041" duration="11468000" />
+      <workItem from="1605094294604" duration="5979000" />
     </task>
     <servers />
   </component>
@@ -112,18 +118,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="100" y="100" width="1006" height="838" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1604763857989" />
-    <state x="296" y="278" key="FileChooserDialogImpl" timestamp="1604763197027">
+    <state x="296" y="278" key="FileChooserDialogImpl" timestamp="1605097290643">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="296" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1604763197027" />
+    <state x="296" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605097290643" />
     <state x="17" y="165" key="SettingsEditor" timestamp="1604407293141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="17" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604407293141" />
-    <state x="107" y="253" key="Vcs.Push.Dialog.v2" timestamp="1604673913015">
+    <state x="107" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605021083874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="107" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1604673913015" />
+    <state x="107" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605021083874" />
     <state x="223" y="119" width="585" height="801" key="find.popup" timestamp="1604407197537">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
