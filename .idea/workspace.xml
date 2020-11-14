@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="396f46a9-a040-476a-9a90-535f18228645" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +42,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Пример/src/App.js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Пример" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -52,7 +51,7 @@
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
-    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../Пример/src/App.js" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../Пример/src/store/actions/auth.js" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -102,7 +101,8 @@
       <workItem from="1605094294604" duration="6243000" />
       <workItem from="1605120101697" duration="5072000" />
       <workItem from="1605171708069" duration="21632000" />
-      <workItem from="1605294575813" duration="1962000" />
+      <workItem from="1605294575813" duration="2204000" />
+      <workItem from="1605351278627" duration="3093000" />
     </task>
     <servers />
   </component>
@@ -110,22 +110,22 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="222" y="63" width="1006" height="835" key="DiffContextDialog" timestamp="1605211123194">
+    <state x="222" y="63" width="1006" height="835" key="DiffContextDialog" timestamp="1605352237956">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="222" y="63" width="1006" height="835" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605211123194" />
-    <state x="296" y="278" key="FileChooserDialogImpl" timestamp="1605204246377">
+    <state x="222" y="63" width="1006" height="835" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605352237956" />
+    <state x="296" y="278" key="FileChooserDialogImpl" timestamp="1605352004513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="296" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605204246377" />
+    <state x="296" y="278" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1605352004513" />
     <state x="17" y="165" key="SettingsEditor" timestamp="1604407293141">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="17" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1604407293141" />
-    <state x="107" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605212376458">
+    <state x="107" y="253" key="Vcs.Push.Dialog.v2" timestamp="1605296775614">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="107" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605212376458" />
+    <state x="107" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1605296775614" />
     <state x="223" y="119" width="585" height="801" key="find.popup" timestamp="1604407197537">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

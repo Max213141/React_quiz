@@ -1,11 +1,10 @@
 import axios from 'axios'
-import {AUTH_LOGOUT, AUTH_SUCCESS} from "./actionTypes";
+import {AUTH_LOGOUT, AUTH_SUCCESS} from './actionTypes';
 
 export function auth(email, password, isLogin) {
     return async dispatch => {
         const authData = {
-            email,
-            password,
+            email, password,
             returnSecureToken: true
         }
 
@@ -14,58 +13,60 @@ export function auth(email, password, isLogin) {
         if (isLogin) {
             url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA-Xi7YDlBeqroPFJU0Fc8eKadX1jDXr2c'
         }
-        const response = await axios.post(url,authData)
+
+        const response = await axios.post(url, authData)
         const data = response.data
 
-        const expirationDate = new Date(new Date().getTime + data.expiresIn * 1000)
+        const expirationDate = new Date(new Date().getTime() + data.expiresIn * 1000)
 
         localStorage.setItem('token', data.idToken)
-        localStorage.setItem('User ID', data.localId)
+        localStorage.setItem('userId', data.localId)
         localStorage.setItem('expirationDate', expirationDate)
+        console.log('exp', expirationDate)
 
         dispatch(authSuccess(data.idToken))
         dispatch(autoLogout(data.expiresIn))
     }
 }
 
-export function autoLogout(time){
+export function autoLogout(time) {
     return dispatch => {
-        setTimeout(()=>{
+        setTimeout(() => {
             dispatch(logout())
-        },time * 1000)
+        }, time * 1000)
     }
 }
 
-export function logout(){
+export function logout() {
     localStorage.removeItem('token')
-    localStorage.removeItem('User ID')
+    localStorage.removeItem('userId')
     localStorage.removeItem('expirationDate')
     return {
         type: AUTH_LOGOUT
     }
 }
 
-export function autoLogin(){
+
+export function autoLogin() {
     return dispatch => {
         const token = localStorage.getItem('token')
-        if(!token) {
+        if (!token) {
             dispatch(logout())
         } else {
             const expirationDate = new Date(localStorage.getItem('expirationDate'))
-            if(expirationDate <= new Date()) {
+            if (expirationDate <= new Date()) {
                 dispatch(logout())
-            }else {
+            } else {
                 dispatch(authSuccess(token))
                 dispatch(autoLogout((expirationDate.getTime() - new Date().getTime()) / 1000))
             }
         }
-
     }
 }
 
 export function authSuccess(token) {
     return {
-       type: AUTH_SUCCESS,
-       token
+        type: AUTH_SUCCESS,
+        token
     }
 }
